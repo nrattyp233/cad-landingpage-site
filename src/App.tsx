@@ -1,5 +1,3 @@
-import React from 'react';
-
 function App() {
   return (
     <div style={{ padding: '20px', backgroundColor: '#0f172a', minHeight: '100vh', color: 'white' }}>
