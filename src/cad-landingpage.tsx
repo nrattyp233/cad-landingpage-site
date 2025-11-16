@@ -353,22 +353,23 @@ const LandingPage: React.FC = () => {
             {/* Deep Dive 1 */}
             <section className="w-full py-16 md:py-24 bg-dark-2/50">
                 <div className="container mx-auto px-4">
-                <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h3 className="text-3xl font-bold mb-4">Plan First. Match Second.</h3>
-                        <p className="text-gray-300 mb-4">
-                            The "Date Marketplace" is our core feature. It flips the script on dating apps. By focusing on a shared activity, you connect with people based on genuine, shared interests from the very beginning.
-                        </p>
-                        <ul className="space-y-2 text-gray-400">
-                            <li className="flex items-center gap-2">✓ Filter for intent and initiative.</li>
-                            <li className="flex items-center gap-2">✓ Eliminate the endless "talking stage".</li>
-                            <li className="flex items-center gap-2">✓ Go on dates you're actually excited about.</li>
-                        </ul>
-                    </div>
-                    <div className="flex justify-center">
-                        <AppMockup>
-                           <DateMarketplacePreview />
-                        </AppMockup>
+                    <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 className="text-3xl font-bold mb-4">Plan First. Match Second.</h3>
+                            <p className="text-gray-300 mb-4">
+                                The "Date Marketplace" is our core feature. It flips the script on dating apps. By focusing on a shared activity, you connect with people based on genuine, shared interests from the very beginning.
+                            </p>
+                            <ul className="space-y-2 text-gray-400">
+                                <li className="flex items-center gap-2">✓ Filter for intent and initiative.</li>
+                                <li className="flex items-center gap-2">✓ Eliminate the endless "talking stage".</li>
+                                <li className="flex items-center gap-2">✓ Go on dates you're actually excited about.</li>
+                            </ul>
+                        </div>
+                        <div className="flex justify-center">
+                            <AppMockup>
+                                <DateMarketplacePreview />
+                            </AppMockup>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -393,17 +394,18 @@ const LandingPage: React.FC = () => {
             {/* Deep Dive 3 */}
             <section className="w-full py-16 md:py-24 bg-dark-2/50">
                 <div className="container mx-auto px-4">
-                <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h3 className="text-3xl font-bold mb-4">Familiar, But Better.</h3>
-                        <p className="text-gray-300 mb-4">
-                            Enjoy the classic swiping experience, supercharged with AI. Our "Vibe Check" gives you instant, AI-generated insights into a person's personality and your potential compatibility before you even swipe.
-                        </p>
-                    </div>
-                    <div className="relative flex justify-center">
-                        <AppMockup>
-                           <SwipeDeckPreview />
-                        </AppMockup>
+                    <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 className="text-3xl font-bold mb-4">Familiar, But Better.</h3>
+                            <p className="text-gray-300 mb-4">
+                                Enjoy the classic swiping experience, supercharged with AI. Our "Vibe Check" gives you instant, AI-generated insights into a person's personality and your potential compatibility before you even swipe.
+                            </p>
+                        </div>
+                        <div className="relative flex justify-center">
+                            <AppMockup>
+                                <SwipeDeckPreview />
+                            </AppMockup>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -411,26 +413,27 @@ const LandingPage: React.FC = () => {
             {/* Final CTA */}
             <section className="w-full py-16 md:py-24 bg-dark-1">
                 <div className="container mx-auto px-4 text-center">
-                <div className="max-w-3xl mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-pink via-purple-500 to-cyan-400 bg-[length:200%_auto] animate-text-gradient-flow">
-                        The Future of Dating is About Doing.
-                    </h2>
-                    <p className="mt-4 text-lg text-gray-300">
-                        Be the first to experience a dating app that values your time and helps you create memories. Sign up now and we'll let you know the moment we launch.
-                    </p>
-                     <form onSubmit={handleEmailSubmit} className="mt-8 max-w-md mx-auto flex flex-col sm:flex-row gap-3">
-                        <input
-                            type="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            placeholder="your.email@example.com"
-                            className="flex-grow bg-dark-3 border border-dark-3 rounded-full p-3 px-6 text-white focus:ring-2 focus:ring-brand-pink focus:border-brand-pink transition"
-                            disabled={isSubmitted}
-                        />
-                        <button type="submit" disabled={isSubmitted} className="bg-brand-pink text-white font-bold py-3 px-6 rounded-full transition-all duration-300 hover:shadow-glow-pink disabled:bg-gray-500 disabled:shadow-none">
-                            {isSubmitted ? '✓ On The List' : 'Get Early Access'}
-                        </button>
-                    </form>
+                    <div className="max-w-3xl mx-auto">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-pink via-purple-500 to-cyan-400 bg-[length:200%_auto] animate-text-gradient-flow">
+                            The Future of Dating is About Doing.
+                        </h2>
+                        <p className="mt-4 text-lg text-gray-300">
+                            Be the first to experience a dating app that values your time and helps you create memories. Sign up now and we'll let you know the moment we launch.
+                        </p>
+                        <form onSubmit={handleEmailSubmit} className="mt-8 max-w-md mx-auto flex flex-col sm:flex-row gap-3">
+                            <input
+                                type="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                placeholder="your.email@example.com"
+                                className="flex-grow bg-dark-3 border border-dark-3 rounded-full p-3 px-6 text-white focus:ring-2 focus:ring-brand-pink focus:border-brand-pink transition"
+                                disabled={isSubmitted}
+                            />
+                            <button type="submit" disabled={isSubmitted} className="bg-brand-pink text-white font-bold py-3 px-6 rounded-full transition-all duration-300 hover:shadow-glow-pink disabled:bg-gray-500 disabled:shadow-none">
+                                {isSubmitted ? '✓ On The List' : 'Get Early Access'}
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </section>
             
